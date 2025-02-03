@@ -5,15 +5,6 @@ from googleapiclient.discovery import build
 import os
 import time
 import asyncio
-import streamlit as st
-
-import streamlit as st
-import pymysql
-import google.generativeai as genai
-from googleapiclient.discovery import build
-import os
-import time
-import asyncio
 
 st.set_page_config(
     page_title="LevelUP",
