@@ -1,4 +1,4 @@
-altair.vegalite.v4
+altair==4.2.0
 pandas
 streamlit==1.18.0
 pymysql==1.0.2
