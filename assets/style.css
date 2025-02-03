@@ -1,0 +1,14 @@
+/* Example: Custom styling */
+body {
+    background-color: #f7f7f7;
+}
+
+.stButton>button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+}
+
+.stTextInput>input {
+    font-size: 16px;
+}
