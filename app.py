@@ -6,6 +6,11 @@ import os
 import time
 import asyncio
 
+
+GENAI_API_KEY = st.secrets["AIzaSyD8dYmlfLDp9xV2EUSWRf_zkiwqmusSLMg"]
+YOUTUBE_API_KEY = st.secrets["AIzaSyDo5jkE6EHySmkx6wqDPV1w1KZ5JrEkG7s"]
+MYSQL_PASSWORD = st.secrets["mysql#7V"]
+
 st.set_page_config(
     page_title="LevelUP",
     page_icon="logo.png",  # Specify the path to your PNG logo
