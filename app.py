@@ -64,7 +64,7 @@ def connect_to_db():
 # Function to get job roles dynamically from Gemini AI based on domain
 async def generate_job_roles(domain):
     try:
-        model = genai.GenerativeModel("gemini-pro")
+        model = genai.GenerativeModel("gemini-2.0-flash")
         prompt = f"Generate a list of job roles for the domain: {domain}. Provide at least 10 job roles."
         response = model.generate_content(prompt)
         
@@ -184,7 +184,7 @@ st.subheader("💬 Hey there! I'm Nano, your career buddy!")
 # Function to get chatbot response using Gemini AI
 async def get_gemini_response(user_input):
     try:
-        model = genai.GenerativeModel("gemini-pro")
+        model = genai.GenerativeModel("gemini-2.0-flash")
         response = model.generate_content(user_input)
         return response.text if response.text else "Sorry, I couldn't generate a response."
     except Exception as e:
