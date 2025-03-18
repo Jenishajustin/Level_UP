@@ -48,7 +48,7 @@ domain = st.sidebar.selectbox("Select Your Domain:", ["Data Science", "Web Devel
 
 
 # Set your Gemini AI API Key
-genai.configure(api_key="AIzaSyD8dYmlfLDp9xV2EUSWRf_zkiwqmusSLMg")  # Replace with your actual API key
+genai.configure(api_key="AIzaSyDmYT925XxY7NpcRmA2V0ARdJGNDGyqcvo")  # Replace with your actual API key
 
 
 # Database connection function
@@ -103,7 +103,7 @@ def fetch_youtube_playlists(job_role):
 # Function to generate a roadmap based on the job role and skill level
 async def generate_roadmap(job_role, skill_level):
     try:
-        model = genai.GenerativeModel("gemini-pro")
+        model = genai.GenerativeModel("gemini-2.0-flash")
         # Adjust the prompt based on the job role and skill level
         prompt = f"Generate a structured 30-day learning roadmap for someone starting as a {job_role} with a {skill_level} skill level. Provide the roadmap from beginner to advanced level."
         response = model.generate_content(prompt)
